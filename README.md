@@ -98,6 +98,37 @@ The frontend is a user-friendly web application that interacts with the backend 
 
 ---
 
+## Frontend Documentation
+### **Overview**
+The frontend of the CMS DCAT system is a user-friendly web interface designed to allow users to interact with RDF datasets. It enables users to navigate through data sources, submit SPARQL queries, and visualize data insights. The interface is built with HTML, CSS, JavaScript, and Flask, offering seamless communication with the backend services.
+
+## **Key Features**
+
+## **File Structure**
+
+📂 templates/                # HTML templates for web pages
+├── index.html               # Homepage with project overview
+├── query.html               # SPARQL query submission interface
+├── ingest.html              # Data ingestion page
+├── pyvis_graph.html         # Visualization of RDF data using Pyvis
+├── Registered_Catalogue.html# List of registered datasets
+├── explore.html             # Data exploration interface
+├── file_system.html         # File system visualization
+├── tabular_data.html        # Tabular data display
+├── layout.html              # Common layout for consistent design
+├── visualize_graph.html     # Graph-based data visualization
+└── metadata_labelling.html  # Metadata tagging page
+
+📂 static/                   # Static assets (CSS, JS, images)
+├── css/
+│   └── styles.css           # Custom UI styling
+├── js/
+│   └── scripts.js           # Interactive JS functionalities
+└── images/                  # Icons and UI graphics
+
+📂 uploads/                  # Stores user-uploaded files
+
+
 ## 🚀 Getting Started
 
 1. **Clone the Repository:**
