@@ -112,8 +112,8 @@ The frontend of this project is organized to separate the presentation layer (HT
 
 ### **Templates Folder**
 This folder contains all the HTML templates rendered by the Flask backend to serve dynamic web pages.
-
-``` (((revise this))))
+(((recheck this))))
+``` 
 📂 templates/                # HTML templates for web pages
 ├── index.html               # Homepage with project overview
 ├── query.html               # SPARQL query submission interface
@@ -288,35 +288,11 @@ http://localhost:5000
   ```
 
 ---
+## **State Management**
+backened and frontend connection
+## **Styling
 
-
-
-## 🚀 Getting Started
-
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/yourusername/rdf-catalog-system.git
-   ```
-
-2. **Backend Setup:**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   python app.py
-   ```
-
-3. **Frontend Setup:**
-   ```bash
-   cd frontend
-   npm install
-   npm start
-   ```
-
-4. **Access the Application:**
-   - Open `http://localhost:3000` in your browser.
-
----
-
+see chatgppt/
 ## 📞 Contact
 
 For any questions or suggestions, feel free to contact:
