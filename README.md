@@ -106,6 +106,14 @@ The frontend of the CMS DCAT system is a user-friendly web interface designed to
 
 ## **File Structure**
 
+## 📂 Frontend File Structure
+
+The frontend of this project is organized to separate the presentation layer (HTML templates) from static assets (CSS, JavaScript, and images) for better scalability and maintainability.
+
+### **Templates Folder**
+This folder contains all the HTML templates rendered by the Flask backend to serve dynamic web pages.
+
+``` (((revise this))))
 📂 templates/                # HTML templates for web pages
 ├── index.html               # Homepage with project overview
 ├── query.html               # SPARQL query submission interface
@@ -116,17 +124,171 @@ The frontend of the CMS DCAT system is a user-friendly web interface designed to
 ├── file_system.html         # File system visualization
 ├── tabular_data.html        # Tabular data display
 ├── layout.html              # Common layout for consistent design
-├── visualize_graph.html     # Graph-based data visualization
-└── metadata_labelling.html  # Metadata tagging page
+└── visualize_graph.html     # Graph-based data visualization
+```
 
+### **Static Folder**
+This folder holds all the static files like custom styling, JavaScript for interactivity, and images used in the frontend.
+
+```
 📂 static/                   # Static assets (CSS, JS, images)
-├── css/
-│   └── styles.css           # Custom UI styling
-├── js/
-│   └── scripts.js           # Interactive JS functionalities
-└── images/                  # Icons and UI graphics
+├── 📂 assets/               # General assets for the application
+│   └── 📂 img/             # Images and icons
+│       └── favicon.ico     # Website favicon
+├── 📂 css/                 # CSS files for styling
+│   └── styles.css          # General UI styling
+└── 📂 js/                  # JavaScript files for interactivity
+    └── scripts.js          # Interactive JS functionalities
+```
 
+### **Uploads Folder**
+This folder stores files uploaded by users during the data ingestion process.
+
+```
 📂 uploads/                  # Stores user-uploaded files
+```
+
+### **Summary**
+- **HTML templates** provide the structure and layout for different pages of the application.
+- **Static files** manage the styling and interactivity of the frontend.
+- **Uploads folder** securely stores files uploaded by users for further processing.
+
+### **Installation and Configuration**
+
+This section provides detailed instructions on how to set up and configure the project environment to run the CMS DCAT system.
+
+---
+
+## 📦 Prerequisites
+
+Before running the project, ensure you have the following installed:
+
+- **Python 3.8+**  
+- **pip** (Python package installer)
+
+Install Python from the [official website](https://www.python.org/downloads/) if it's not installed.
+
+---
+
+## 🔧 Project Setup
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/your-username/cms-dcat.git
+   cd cms-dcat
+   ```
+
+2. **Create a Virtual Environment (Recommended)**
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # For Linux/macOS
+   venv\Scripts\activate      # For Windows
+   ```
+
+3. **Install Required Dependencies**
+
+   Install all necessary Python libraries listed in the `requirements.txt` file:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+   **Or install manually if needed:**
+
+   ```bash
+   pip install Flask
+   pip install rdflib
+   pip install pyvis
+   pip install SPARQLWrapper
+   ```
+
+--- ((recheck this))
+
+## 📂 Project Configuration
+
+1. **Uploads Folder Setup**
+
+   Ensure the **uploads** folder exists in the project root to store user-uploaded files. If it doesn't exist, create it manually:
+
+   ```bash
+   mkdir uploads
+   ```
+
+   This folder is defined in the configuration:
+
+   ```python
+   UPLOAD_FOLDER = os.path.join(os.getcwd(), 'uploads')
+   app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
+   ```
+
+2. **Data Sources Configuration**
+
+   Ensure that the file `data_sources.json` is present in the project root. This file contains the configuration for connected data sources.
+
+3. **Logging Configuration**
+
+   Debugging and logs are enabled for development purposes:
+
+   ```python
+   logging.basicConfig(level=logging.DEBUG)
+   ```
+
+---
+
+## 🚀 Running the Project
+
+Start the Flask application by running the main script:
+
+```bash
+python main.py
+```
+
+The server will start, and you can access the web application by navigating to:
+
+```
+http://localhost:5000
+```
+
+---
+
+## ⚙️ Installed Dependencies Explained
+
+| **Library**         | **Purpose**                                                                 |
+|---------------------|-------------------------------------------------------------------------------|
+| **Flask**           | Web framework for routing and rendering templates.                           |
+| **rdflib**          | Handles RDF data parsing and manipulation.                                   |
+| **pyvis**           | Used for interactive RDF graph visualization.                                |
+| **SPARQLWrapper**   | Executes SPARQL queries against RDF datasets.                                 |
+| **requests**        | Makes HTTP requests to external APIs.                                         |
+| **json**            | Reads and writes JSON data for data sources and formatting.                   |
+| **datetime**        | Handles date and time operations for data logging.                           |
+| **re**              | Regular expressions for data validation and pattern matching.                 |
+| **logging**         | Logs messages for debugging and monitoring.                                   |
+| **time**            | Tracks execution time for performance monitoring.                            |
+| **os**              | Handles file system paths and operations.                                     |
+
+---
+
+## ❗ Troubleshooting
+
+- **ModuleNotFoundError:**  
+  If you encounter this error, reinstall the missing dependency:
+
+  ```bash
+  pip install <missing-package>
+  ```
+
+- **Port Already in Use:**  
+  If port 5000 is occupied, run the app on a different port:
+
+  ```bash
+  python main.py --port=5001
+  ```
+
+---
+
 
 
 ## 🚀 Getting Started
