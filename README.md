@@ -102,7 +102,28 @@ The frontend is a user-friendly web application that interacts with the backend 
 ### **Overview**
 The frontend of the CMS DCAT system is a user-friendly web interface designed to allow users to interact with RDF datasets. It enables users to navigate through data sources, submit SPARQL queries, and visualize data insights. The interface is built with HTML, CSS, JavaScript, and Flask, offering seamless communication with the backend services.
 
-## **Key Features**
+
+## 🚀 **Key Features**
+
+- **Intuitive User Interface:**  
+  Clean and responsive design for seamless navigation and user interaction.
+
+- **Interactive Graph Visualizations:**  
+  Dynamic RDF graph representation using **Pyvis** for intuitive data exploration.
+
+- **SPARQL Query Integration:**  
+  Built-in interface for users to submit and execute SPARQL queries easily.
+
+- **Responsive Design:**  
+  Fully responsive layout using **Bootstrap**, ensuring compatibility across devices.
+
+- **Real-Time Data Interaction:**  
+  Instant feedback and updates through smooth integration with backend APIs.
+
+---
+
+These features ensure a user-friendly and efficient frontend experience for exploring and managing RDF metadata.
+
 
 ## **File Structure**
 
@@ -290,9 +311,98 @@ http://localhost:5000
 ---
 ## **State Management**
 backened and frontend connection
-## **Styling
 
-see chatgppt/
+
+## 🎨 **Styling**
+
+The frontend of the CMS DCAT system is designed to provide a clean, responsive, and user-friendly interface. The styling incorporates custom CSS to enhance user interaction and create a visually appealing design.
+
+---
+
+### **1. Sidebar Navigation Styling**
+
+```css
+.sidebar {
+    position: fixed;
+    width: 270px; 
+    height: 100vh;
+    background-color: #04294b !important;
+    color: #ffffff;
+    padding-bottom: 30px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #50B8E4;
+    color: #ffffff;
+}
+```
+
+**📌 Explanation:**  
+- Fixed sidebar for easy navigation.  
+- Smooth hover effect with a color change for user feedback.  
+- Box shadow adds depth to the sidebar for a modern look.
+
+---
+
+### **2. Table Styling for Data Visualization**
+
+```css
+.table-responsive .bg-theme {
+    background: #04294b;
+    color: #fff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #04294b;
+    color: #fff !important;
+}
+```
+
+**📌 Explanation:**  
+- Dark-themed table headers improve readability.  
+- Pagination buttons are highlighted for better navigation through data tables.
+
+---
+
+### **3. Custom Button Design**
+
+```css
+.btn-primary {
+    border-radius: 40px;
+    background: #04294b;
+    transition: .3s all ease;
+    border: 1px solid #04294b;
+    padding: 7px 30px;
+}
+
+.btn-primary:hover {
+    background: #7a65f5;
+    border: 1px solid #7a65f5;
+}
+```
+
+**📌 Explanation:**  
+- Rounded buttons for a modern look.  
+- Smooth color transition on hover improves interactivity.  
+- Dark blue and purple colors ensure consistent branding.
+
+---
+
+
+
+These styling components work together to create a clean, modern, and intuitive user experience in the CMS DCAT system.
+
+
 ## 📞 Contact
 
 For any questions or suggestions, feel free to contact:
