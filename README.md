@@ -114,7 +114,7 @@ The frontend is a user-friendly web application that interacts with the backend 
 ### **Installation and Configuration**  
 ### **API Endpoints**  
 ### **Database Integration**  
-### **Error Handling**
+
 
 ## 📚 Frontend Documentation
 ### **Overview**
@@ -434,12 +434,12 @@ These styling components work together to create a clean, modern, and intuitive 
 
 ## 🚀 Challenges and Future Work  
 ### **Challenges**  
-Document any challenges faced and how they were resolved.  
+ 
 ### **Future Features**  
-Include planned features for future implementation.
+
 
 ## 🤝 Credits  
-Acknowledge any libraries, frameworks, or collaborators.
+
 
 ## 📜 License
 
