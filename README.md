@@ -1,5 +1,9 @@
 # 📖 RDF-Based Catalog System
 
+## 🏁 Introduction
+
+## ✨ Features
+
 ## 📐 System Architecture
 
 ### **Overview**
@@ -98,7 +102,21 @@ The frontend is a user-friendly web application that interacts with the backend 
 
 ---
 
-## Frontend Documentation
+
+## 🗂️ Codebase Structure
+
+## ⚙️ Setup Instructions
+
+## 📚 Backend Documentation  
+### **Overview**  
+### **Key Features**  
+### **File Structure**  
+### **Installation and Configuration**  
+### **API Endpoints**  
+### **Database Integration**  
+### **Error Handling**
+
+## 📚 Frontend Documentation
 ### **Overview**
 The frontend of the CMS DCAT system is a user-friendly web interface designed to allow users to interact with RDF datasets. It enables users to navigate through data sources, submit SPARQL queries, and visualize data insights. The interface is built with HTML, CSS, JavaScript, and Flask, offering seamless communication with the backend services.
 
@@ -402,16 +420,29 @@ The frontend of the CMS DCAT system is designed to provide a clean, responsive, 
 
 These styling components work together to create a clean, modern, and intuitive user experience in the CMS DCAT system.
 
+--- 
+## 🛢️ Database Documentation (RDF)  
+### **Schema Design**  
+### **Relationships**  
+### **Example Data**  
+### **Database Setup and Configuration**
 
-## 📞 Contact
+## 📘 Usage Guide  
+### **Getting Started**  
+### **Example Scenarios**  
+### **Screenshots/Diagrams**
 
-For any questions or suggestions, feel free to contact:
-- **Name:** [Your Name]
-- **Email:** [your.email@example.com]
-- **University:** [Your University]
+## 🚀 Challenges and Future Work  
+### **Challenges**  
+Document any challenges faced and how they were resolved.  
+### **Future Features**  
+Include planned features for future implementation.
 
----
+## 🤝 Credits  
+Acknowledge any libraries, frameworks, or collaborators.
 
-## 📄 License
-This project is for academic purposes only.
+## 📜 License
+
+
+
 
